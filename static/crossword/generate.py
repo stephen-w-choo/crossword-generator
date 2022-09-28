@@ -318,11 +318,10 @@ def generate_crossword(structure, words):
     solved = creator.solve()
     
     # returns a 2d array
-    return creator.letter_grid(solved)
+    return (creator.letter_grid(solved))
 
 
 def main():
-
     # Check usage
     if len(sys.argv) not in [3, 4]:
         sys.exit("Usage: python generate.py structure words [output]")
