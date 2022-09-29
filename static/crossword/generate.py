@@ -1,6 +1,6 @@
 import sys
 
-from .crossword import *
+from crossword import *
 
 from collections import deque
 
@@ -340,6 +340,9 @@ def main():
     if assignment is None:
         return None
     else:
+        print(assignment)
         creator.print(assignment)
         if output:
             creator.save(assignment, output)
+
+main()
